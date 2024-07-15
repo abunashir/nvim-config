@@ -1,3 +1,5 @@
 require("anashir.sets")
 require("anashir.remaps")
 require("anashir.plugins")
+require("anashir.configs")
+require("anashir.lsp_config")
