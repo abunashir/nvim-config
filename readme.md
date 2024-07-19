@@ -5,19 +5,33 @@ me to have a development environment ready whenever necessary.
 
 ### Setup
 
-1. Clone the repo
+1. Install NeoVim
+
+```sh
+# Mac
+brew install neovim
+
+# Ubuntu
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update && sudo apt-get install neovim
+
+# Python provider (Optional)
+python -m pip install --user --upgrade pynvim
+```
+
+2. Clone the repo
 
 ```sh
 gh repo clone abunashir/nvim-config
 ```
 
-2. Create a symlink
+3. Create a symlink
 
 ```sh
 ln -sf $PWD ~/.config/nvim
 ```
 
-3. Install vim-plug
+4. Install vim-plug
 
 ```sh
 sh -c 'curl -fLo \
@@ -25,10 +39,20 @@ sh -c 'curl -fLo \
     --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
-4. Open up `nvim` and install plugins
+5. Open up `nvim` and install plugins
 
 ```vim
 :PlugInstall
+```
+
+6. Install Language Servers
+
+```
+# Using LSP
+:LspInstall
+
+# Using Mason
+:Mason
 ```
 
 ### Credits

@@ -34,3 +34,10 @@ vim.keymap.set("n", "<Leader>fb", ":Git blame<CR>")
 -- Jump to method to mehtod
 vim.keymap.set("n", "<Leader>m", "]m")
 vim.keymap.set("n", "<Leader>M", "[m")
+
+-- toggle hlsearch
+vim.keymap.set('n', '<leader>h', ':set hlsearch!<CR>')
+
+-- toggle inline diagnostics
+vim.keymap.set('n', '<Leader>de', ':lua vim.diagnostic.enable()<CR>')
+vim.keymap.set('n', '<Leader>dd', ':lua vim.diagnostic.disable()<CR>')
