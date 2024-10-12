@@ -12,6 +12,7 @@ vim.opt.incsearch = true
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.modelines = 0
+vim.opt.hlsearch = false
 
 -- Line Numbers
 vim.opt.number = true
