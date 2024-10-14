@@ -30,5 +30,8 @@ Plug('williamboman/mason.nvim')
 Plug('williamboman/mason-lspconfig.nvim')
 Plug('VonHeikemen/lsp-zero.nvim', {['branch'] = 'v3.x'})
 
+-- Projectionist
+Plug('tpope/vim-projectionist')
+
 vim.call('plug#end')
 vim.cmd('silent! colorscheme jellybeans')
